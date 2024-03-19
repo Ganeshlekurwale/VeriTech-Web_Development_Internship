@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;800;900&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  height: 100%;
+  width: 100vw;
+  background-color: #ffffff;
+    background-image: -webkit-linear-gradient(90deg, #ffffff 0%, #a3cdf5 49%, #ffffff 100%);
+    background-image: -moz-linear-gradient(90deg, #ffffff 0%, #d1fff8 49%, #ffffff 100%);
+    background-image: -o-linear-gradient(90deg, #ffffff 0%, #c7fff2 49%, #ffffff 100%);
+    background-image: linear-gradient(90deg, #ffffff 0%, #c5f5ff 49%, #ffffff 100%);
+}
+
+.container {
+  margin: 20px;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.companyName {
+  text-align: center;
+  color: #fff;
+  background: #e52d27;
+  background: -webkit-linear-gradient(to right, #b31217, #e52d27);
+  background: linear-gradient(to right, #b31217, #e52d27);
+  border-radius: 10px;
+  padding: 10px 15px;
+}
+
+.companyDetail {
+  max-width: 50%;
+  text-align: center;
+
+}
+
+.teamDetail {
+  text-align: center;
+}
+
+.team {
+  margin-top: 35px;
+}
+
+.teamDetail>h3 {
+  color: #fff;
+  background: #e52d27;
+  background: -webkit-linear-gradient(to right, #b31217, #e52d27);
+  background: linear-gradient(to right, #b31217, #e52d27);
+  border-radius: 10px;
+  padding: 10px 15px;
+}
+
+.teamMember {
+  margin-top: 35px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.founders,
+.vpTeam {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+@media only screen and (max-width: 768px) {
+  .container {
+    padding: 20px;
+  }
+
+  .companyDetail {
+    width: 90%;
+  }
+
+  .teamDetail>h3 {
+    width: 90%;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .companyDetail {
+    width: 100%;
+  }
+
+  .teamDetail>h3 {
+    width: 100%;
+  }
+}
